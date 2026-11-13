@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresh Basket — Your neighborhood grocery</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="store.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="index.html">🥬 Fresh Basket</a><a class="cart-link" href="#cart">Your basket <span id="cart-count">0</span></a></header>
+  <main>
+    <section class="hero"><span class="eyebrow">FRESH PICKS. EVERY DAY.</span><h1>Good food.<br>Better days.</h1><p>Your everyday essentials, from crisp produce to pantry favorites.<br>Fresh finds at prices you’ll love.</p><a class="button" href="#shop">Explore the aisles ↓</a><div class="hero-art" aria-hidden="true">🥑 🍋<br>🥕 🥦</div></section>
+    <div class="benefits"><span>🌱 Quality ingredients</span><span>🧺 Everyday essentials</span><span>💚 Neighborhood favorites</span></div>
+    <div class="layout">
+      <section id="shop" aria-labelledby="shop-title"><div class="section-heading"><div><span class="eyebrow">THE FRESH EDIT</span><h2 id="shop-title">Shop your favorites</h2></div><label class="search">Search products<input id="search" type="search" placeholder="Try apples or milk…"></label></div><nav id="categories" aria-label="Product categories"></nav><p id="result-count" class="muted" aria-live="polite"></p><div id="products" class="products"></div></section>
+      <aside id="cart" aria-labelledby="cart-title"><h2 id="cart-title">Your basket</h2><p class="muted">A little fresh goes a long way.</p><div id="cart-items"></div><div class="total"><span>Total</span><strong id="cart-total">$0.00</strong></div><p class="muted">Demo store · No payment or delivery</p><button id="checkout" class="button" disabled>Complete demo order</button><button id="clear-cart" class="text-button" disabled>Clear basket</button></aside>
+    </div>
+    <p id="status" role="status" aria-live="polite"></p>
+  </main>
+  <footer>Fresh Basket · Fresh food, simple living. <span>A demo grocery storefront.</span></footer>
+</body>
+</html>
