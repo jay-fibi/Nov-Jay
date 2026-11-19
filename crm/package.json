@@ -1,0 +1,10 @@
+{
+  "name": "orbit-local-crm",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test server.test.js",
+    "test:browser": "node browser.test.js"
+  }
+}
