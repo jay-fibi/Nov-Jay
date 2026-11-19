@@ -1,34 +1,34 @@
 """Demo 1: Simple calculator with basic arithmetic operations."""
 
 
-def add(a, b):
-    return a + b
+def add(EVIEDEBUG_a, EVIEDEBUG_b):
+    return EVIEDEBUG_a + EVIEDEBUG_b
 
 
-def subtract(a, b):
-    return a - b
+def subtract(EVIEDEBUG_a, EVIEDEBUG_b):
+    return EVIEDEBUG_a - EVIEDEBUG_b
 
 
-def multiply(a, b):
-    return a * b
+def multiply(EVIEDEBUG_a, EVIEDEBUG_b):
+    return EVIEDEBUG_a * EVIEDEBUG_b
 
 
-def divide(a, b):
-    if b == 0:
+def divide(EVIEDEBUG_a, EVIEDEBUG_b):
+    if EVIEDEBUG_b == 0:
         raise ValueError("Cannot divide by zero")
-    return a / b
+    return EVIEDEBUG_a / EVIEDEBUG_b
 
 
 def main():
-    a, b = 12, 4
-    print(f"{a} + {b} = {add(a, b)}")
-    print(f"{a} - {b} = {subtract(a, b)}")
-    print(f"{a} * {b} = {multiply(a, b)}")
-    print(f"{a} / {b} = {divide(a, b)}")
+    EVIEDEBUG_a, EVIEDEBUG_b = 12, 4
+    print(f"{EVIEDEBUG_a} + {EVIEDEBUG_b} = {add(EVIEDEBUG_a, EVIEDEBUG_b)}")
+    print(f"{EVIEDEBUG_a} - {EVIEDEBUG_b} = {subtract(EVIEDEBUG_a, EVIEDEBUG_b)}")
+    print(f"{EVIEDEBUG_a} * {EVIEDEBUG_b} = {multiply(EVIEDEBUG_a, EVIEDEBUG_b)}")
+    print(f"{EVIEDEBUG_a} / {EVIEDEBUG_b} = {divide(EVIEDEBUG_a, EVIEDEBUG_b)}")
     try:
-        divide(a, 0)
-    except ValueError as err:
-        print(f"Error: {err}")
+        divide(EVIEDEBUG_a, 0)
+    except ValueError as EVIEDEBUG_err:
+        print(f"Error: {EVIEDEBUG_err}")
 
 
 if __name__ == "__main__":

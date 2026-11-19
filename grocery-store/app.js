@@ -1,4 +1,5 @@
 'use strict';
+// Browser interactions and basket persistence.
 const { products, sanitizeCart, total, filterProducts } = globalThis.GroceryStore;
 const storageKey = 'fresh-basket-cart-v1';
 const money = cents => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(cents / 100);

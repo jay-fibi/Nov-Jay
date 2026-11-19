@@ -2,39 +2,39 @@
 
 
 class TodoList:
-    def __init__(self):
-        self.tasks = []
+    def __init__(EVIEDEBUG_self):
+        EVIEDEBUG_self.EVIEDEBUG_tasks = []
 
-    def add(self, title):
-        self.tasks.append({"title": title, "done": False})
+    def add(EVIEDEBUG_self, EVIEDEBUG_title):
+        EVIEDEBUG_self.EVIEDEBUG_tasks.append({"title": EVIEDEBUG_title, "done": False})
 
-    def complete(self, index):
-        if 0 <= index < len(self.tasks):
-            self.tasks[index]["done"] = True
+    def complete(EVIEDEBUG_self, EVIEDEBUG_index):
+        if 0 <= EVIEDEBUG_index < len(EVIEDEBUG_self.EVIEDEBUG_tasks):
+            EVIEDEBUG_self.EVIEDEBUG_tasks[EVIEDEBUG_index]["done"] = True
         else:
             raise IndexError("Task index out of range")
 
-    def remove(self, index):
-        return self.tasks.pop(index)
+    def remove(EVIEDEBUG_self, EVIEDEBUG_index):
+        return EVIEDEBUG_self.EVIEDEBUG_tasks.pop(EVIEDEBUG_index)
 
-    def show(self):
-        if not self.tasks:
+    def show(EVIEDEBUG_self):
+        if not EVIEDEBUG_self.EVIEDEBUG_tasks:
             print("No tasks.")
-        for i, task in enumerate(self.tasks):
-            status = "x" if task["done"] else " "
-            print(f"{i}. [{status}] {task['title']}")
+        for EVIEDEBUG_i, EVIEDEBUG_task in enumerate(EVIEDEBUG_self.EVIEDEBUG_tasks):
+            EVIEDEBUG_status = "x" if EVIEDEBUG_task["done"] else " "
+            print(f"{EVIEDEBUG_i}. [{EVIEDEBUG_status}] {EVIEDEBUG_task['title']}")
 
 
 def main():
-    todo = TodoList()
-    todo.add("Learn Python")
-    todo.add("Write demo programs")
-    todo.add("Push to GitHub")
-    todo.complete(0)
-    todo.show()
-    removed = todo.remove(1)
-    print(f"Removed: {removed['title']}")
-    todo.show()
+    EVIEDEBUG_todo = TodoList()
+    EVIEDEBUG_todo.add("Learn Python")
+    EVIEDEBUG_todo.add("Write demo programs")
+    EVIEDEBUG_todo.add("Push to GitHub")
+    EVIEDEBUG_todo.complete(0)
+    EVIEDEBUG_todo.show()
+    EVIEDEBUG_removed = EVIEDEBUG_todo.remove(1)
+    print(f"Removed: {EVIEDEBUG_removed['title']}")
+    EVIEDEBUG_todo.show()
 
 
 if __name__ == "__main__":

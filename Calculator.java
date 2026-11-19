@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Simple command-line calculator supporting +, -, *, / and %.
+ * Simple interactive command-line calculator supporting +, -, *, / and %.
  */
 public class Calculator {
 

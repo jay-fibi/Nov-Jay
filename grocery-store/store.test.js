@@ -1,4 +1,5 @@
 'use strict';
+// Regression checks for the shared storefront logic.
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const { products, sanitizeCart, total, filterProducts } = require('./store.js');

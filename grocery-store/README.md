@@ -1,5 +1,7 @@
 # Fresh Basket
 
+Original restore point: Git tag `baseline-2026-11-19`.
+
 A responsive, dependency-free grocery storefront built with HTML, CSS, and JavaScript. All application files and tests are contained in this directory.
 
 ## Run

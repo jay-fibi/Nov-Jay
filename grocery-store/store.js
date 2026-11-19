@@ -1,4 +1,4 @@
-/* Shared storefront logic; prices are integer cents. */
+/* Shared storefront logic; all prices are integer cents. */
 (function (root) {
   'use strict';
   const products = [
