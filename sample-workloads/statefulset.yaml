@@ -1,0 +1,42 @@
+# Headless Service provides stable network identities for the StatefulSet.
+apiVersion: v1
+kind: Service
+metadata:
+  name: sample-statefulset
+spec:
+  clusterIP: None
+  selector:
+    app: sample-statefulset
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: sample-statefulset
+spec:
+  serviceName: sample-statefulset
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sample-statefulset
+  template:
+    metadata:
+      labels:
+        app: sample-statefulset
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.28-alpine
+          ports:
+            - name: http
+              containerPort: 80
+          resources:
+            requests:
+              cpu: 100m
+              memory: 64Mi
+            limits:
+              cpu: 250m
+              memory: 128Mi
